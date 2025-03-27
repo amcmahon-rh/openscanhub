@@ -25,9 +25,9 @@ jobs:
       - name: Checkout Kobo Git Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: cancelled_by_revisit
           path: kobo
-          repository: release-engineering/kobo
+          repository: amcmahon-rh/kobo
 
       - name: Run integration tests
         run: |
