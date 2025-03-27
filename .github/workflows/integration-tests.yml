@@ -25,9 +25,9 @@ jobs:
       - name: Checkout Kobo Git Repository
         uses: actions/checkout@v4
         with:
-          ref: cancelled_by_revisit
+          ref: master
           path: kobo
-          repository: amcmahon-rh/kobo
+          repository: release-engineering/kobo
 
       - name: Run integration tests
         run: |
